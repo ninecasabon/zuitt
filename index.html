@@ -1,0 +1,125 @@
+<!--   ctrl + / for comment
+
+HTML is primarily used to create and structure the content of a website -->
+
+<!-- press tab to prepare the common structure -->
+
+<!DOCTYPE html>
+<html>
+<head> 
+	<!-- <head></head> contains detailes about the HTML file which is usually not visible in the browser-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="I coded a game with Zuitt!" />
+	<meta property="og:description" content="This Game Development project is powered by Zuitt Coding Bootcamp" />
+	<meta property="og:site_name" content="I coded a game with Zuitt!" />
+	<meta property="og:image" content="[your-deployment-link]/images/story-thumbnail-2048.jpg" />
+	<meta property="og:image:secure_url" content="[your-deployment-link]" />
+
+	<title>2048</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<!-- <body></body> contains the actual content of the html file that are visible in the web browser -->
+
+	<!-- tags are those with left and right angle brackets -->
+
+	<!-- To create html contents, we usually use paired tags and self-closing tags -->
+
+	<div class="container">
+		<h1>2048</h1>
+		<h2>Created By: Nine w/ Gt</h2>
+
+		<!-- horizontal rule -->
+		
+		<!-- <h2>	Score: <span id="score">	0	</span>	</h2> -->
+
+		<hr id="top-line">
+		<div class="header-container">
+			<div class="score-container">
+				<div class="score-label">
+					Score: 
+				</div>
+				<div id="score">
+					0
+				</div>
+			</div>
+
+			<div class="share-button-container">
+				<div class="share-label">Share:</div>
+				<div class="share-icons">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=[your-deployment-link]" target="_blank">
+						<img src="./images/share_2048-fb.svg">
+					</a>
+				</div>
+			</div>
+		</div> 
+
+		
+
+		<!-- id and class attributes are used to provide identifier/s for styling and manipulation (The difference between id and class is that id (identifier) should not be duplicated in the entire document) -->
+
+		<div id="board">
+			<!-- ctrl + shift + d for duplicating -->
+
+			<!-- div tags are usually containers to group contents -->
+
+			<!-- can use div or section as divisor for your contents (to create division) -->
+
+			<!-- In programming, our count usually starts with 0 -->
+			<!-- <div class="tile x2">[r0,c0]</div>
+			<div class="tile x4">[r0,c1]</div>
+			<div class="tile x8">[r0,c2]</div>
+			<div class="tile x16">[r0,c3]</div>
+
+			<div class="tile x32">[r1,c0]</div>
+			<div class="tile x64">[r1,c1]</div>
+			<div class="tile x128">[r1,c2]</div>
+			<div class="tile x256">[r1,c3]</div>
+
+			<div class="tile x512">[r2,c0]</div>
+			<div class="tile x1024">[r2,c1]</div>
+			<div class="tile x2048">[r2,c2]</div>
+			<div class="tile x4096">[r2,c3]</div>
+
+			<div class="tile x8192">[r3,c0]</div>
+			<div class="tile">[r3,c1]</div>
+			<div class="tile">[r3,c2]</div>
+			<div class="tile">[r3,c3]</div> -->
+		</div>
+	</div>
+
+	<footer>
+	    <a href="https://zuitt.co/?referral=2402-org-ali" target="blank">
+	        <i class="fa-solid fa-globe"></i>
+	    </a>
+	    <a href="https://www.facebook.com/zuittcodingbootcamp" target="blank">
+	        <i class="fa-brands fa-facebook"></i>
+	    </a>
+	    <a href="https://twitter.com/zuittco" target="blank">
+	        <i class="fa-brands fa-twitter"></i>
+	    </a>
+	    <a href="https://www.instagram.com/zuittcodingbootcamp" target="blank">
+	        <i class="fa-brands fa-instagram"></i>
+	    </a>
+	    <a href="https://www.tiktok.com/@zuittcodingbootcamp" target="blank">
+	        <i class="fa-brands fa-tiktok"></i>
+	    </a>
+	    <a href="https://www.youtube.com/@ZuittCodingBootcamp" target="blank">
+	        <i class="fa-brands fa-youtube"></i>
+	    </a>
+	</footer>
+
+	<!-- fontawesome script -->
+	<script src="https://kit.fontawesome.com/bedd9dc698.js" crossorigin="anonymous"></script>
+	<!-- JS Connection -->
+	<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
+
+<!-- 
+	tag selector:	<body>			body{}
+	id selector:	id="board"		#board
+	class selector:	class=tile  	.tile
